@@ -108,6 +108,7 @@ body {}
     font-size: 18px;
     color: #fff;
 }
+
 .bttn small {
     color: #fff;
 }
@@ -120,7 +121,7 @@ body {}
 }
 
 /*about part*/
-.about .row {
+.about > .row {
     padding: 120px 0;
 }
 
@@ -131,6 +132,8 @@ h2 {
 
 .about-header {
     height: 80px;
+    width: 100%;
+    display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url(../images/service-shape-1.png);
@@ -171,12 +174,12 @@ h2 {
 }
 
 
-.about-right h3 {
+.about h3 {
     font-size: 24px;
     font-weight: 700;
 }
 
-.about-right p {
+.about p {
     color: #56576e;
 }
 
@@ -199,6 +202,144 @@ h2 {
     font-size: 22px;
     font-weight: 700;
 }
+
+/*reason why love lunatic*/
+.lunatic-main {
+    margin-top: 80px;
+}
+
+.lunatic-grid {
+    height: 100%;
+    box-shadow: 0 0 30px -12px #c9c9c9;
+    /*    padding-left: 35px;*/
+    transition: .3s all;
+}
+
+.lunatic-grid:hover {
+    transform: translateY(-5px);
+    transition: .3s all;
+    box-shadow: 0 0 30px -5px #c9c9c9;
+}
+
+.love-icon {
+    height: 60px;
+    width: 60px;
+    margin-top: 30px;
+    background-color: #2D5BAF;
+    color: #fff;
+    font-size: 20px;
+}
+
+.lunatic-2 {
+    background-color: #23A8C0;
+}
+
+.lunatic-3 {
+    background-color: #8822BF;
+}
+
+.lunatic-4 {
+    background-color: #C02383;
+}
+
+.lunatic-5 {
+    background-color: #E09F25;
+}
+
+.lunatic-6 {
+    background-color: #22BF88;
+}
+
+
+/*video part*/
+.video-col {
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.video-col img {
+    width: 100%;
+}
+
+.video-col .zmdi {
+    padding-left: 6px;
+}
+
+.video-col button {
+    color: #fff;
+    font-size: 50px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    transition: .3s all;
+    border: none;
+    background-color: var(--firstcolor);
+}
+
+.video-col button:hover {
+    transition: .3s all;
+    background-color: #fff;
+    color: var(--firstcolor);
+    box-shadow: 0 0 50px -10px #6858db;
+}
+
+.video-main {
+    display: none;
+    height: 200vh;
+    position: absolute;
+    width: 100vw;
+    background-image: linear-gradient(rgba(1, 1, 1, .7), rgba(1, 1, 1, .7));
+}
+
+.close {
+    color: #fff !important;
+}
+
+
+/*features part*/
+.features-grid {
+    margin-top: 100px;
+}
+
+.features-main {
+    width: 20%;
+    float: left;
+    transform: translateY(-10px);
+}
+
+.features h4 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.features-inner {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+    transition: .3s all;
+}
+
+.features-next {
+    transform: translateY(-40px);
+}
+
+.features-inner:hover {
+    transform: translateY(-5px);
+    transition: .3s all;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -284,6 +425,46 @@ h2 {
         font-weight: 700;
     }
 
+    .about-col-responsive {
+        margin-top: 80px !important;
+    }
+
+    .about-col {
+        margin-top: 0;
+    }
+
+    .lunatic-main {
+        margin-top: 1.5rem;
+    }
+
+    .responsive {
+        margin-top: 50px;
+    }
+
+    .video-col button {
+        color: #fff;
+        font-size: 30px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        width: 70px;
+        transition: .3s all;
+        border: none;
+        background-color: var(--firstcolor);
+    }
+
+    .video-col .zmdi {
+        padding: 0;
+    }
+
+    .video-main iframe {
+        height: 200px;
+    }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -296,6 +477,13 @@ h2 {
         width: 20px;
     }
 
+    .lunatic-main {
+        margin-top: 1.5rem;
+    }
+
+    .responsive-tab {
+        margin-top: 50px;
+    }
 }
 
 /* Desktops and laptops ----------- */
