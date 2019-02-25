@@ -331,19 +331,211 @@ h2 {
     box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
 }
 
+/*lunatic screenshots*/
+
+.item {
+    width: 20%;
+    float: left;
+}
+
+.lunatic-row h2 {
+    margin: 150px auto 50px;
+}
+
+.item img {
+    width: 100%;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    color: #111;
+    font-size:
+        50px;
+}
+
+.arrow-area {
+    margin: 0 auto -50px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    /* left: 100px; */
+    right: 0;
+    display: inline-block;
+    width: 50%;
+    justify-content: start;
+    text-align: left;
+}
+
+.arrow-area1 {
+    margin: 0 auto -50px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    /* right: 100px; */
+    display: inline-block;
+    width: 50%;
+    justify-content: end !important;
+    text-align: right;
+}
+
+.carousel-indicators {
+    bottom: auto;
+    transform: translateY(70px);
+}
+
+.carousel-indicators li {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: grey;
+}
+
+.carousel-indicators li.active {
+    background-color: var(--firstcolor);
+}
 
 
+/*gallery part*/
+.gallery {
+    margin-top: 150px;
+}
 
+.gallery-inner {
+    padding: 50px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+    transition: .3s all;
+}
 
+.gallery-inner h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--firstcolor);
+}
 
+.gallery-inner h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
 
+.gallery-inner ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
 
+.gallery-inner ul li {
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #56576e;
+    font-weight: 400;
+    font-size: 16px;
+    position: relative;
+}
 
+.gallery-inner ul li::before {
+    content: url(../images/check.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 
+.gallery-inner a {
+    font-weight: 700;
+    color: var(--firstcolor);
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    border: 1px solid var(--firstcolor);
+}
 
+.gallery-inner:hover {
+    transform: translateY(-10px);
+    transition: .3s all;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+}
 
+.gallery-inner a:hover {
+    background-color: var(--firstcolor);
+    color: #fff;
+}
 
+.team {
+    margin-top: 70px;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 300px 300px 10px 10px;
+    transition: .3s all;
+}
 
+.team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    transition: .3s all;
+}
+
+.team-main .carousel-indicators{
+    bottom: 0;
+}
+
+.team-content {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.team > .team-img {
+    /*    position: absolute;*/
+    top: -50%;
+    width: 100%;
+}
+
+.team h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.team p {
+    font-weight: 400;
+}
+
+.quotes{
+    display: block;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 60px 60px 60px 80px;
+}
+
+.quotes-icon{
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+.quotes-icon::before{
+    content: '\f1b2';
+    font-family: 'Material-Design-Iconic-Font';
+    color: var(--firstcolor);
+    position: absolute;
+    top: 0;
+    right: 100%;
+    margin-top: 20px;
+    font-size: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.writer{
+    color: var(--firstcolor);
+    font-weight: 400;
+}
+
+.team-main .arrow{
+    font-size: 30px;
+}
 
 
 
@@ -465,6 +657,36 @@ h2 {
         height: 200px;
     }
 
+    .features-main {
+        width: 33.33%;
+        float: left;
+    }
+
+    .features-tab {
+        display: none;
+    }
+
+    .item {
+        width: 33.33%;
+        float: left;
+    }
+
+    .carousel-indicators li {
+        width: 12px !important;
+        height: 12px !important;
+        background-color: grey;
+    }
+
+    .team {
+        margin-top: 30px;
+    }
+    .team-mob{
+        margin-top: 50px;
+    }
+    .team-content p{
+        font-size: 14px;
+    }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -483,6 +705,15 @@ h2 {
 
     .responsive-tab {
         margin-top: 50px;
+    }
+
+    .features-main {
+        width: 33.33%;
+        float: left;
+    }
+
+    .features-tab {
+        display: none;
     }
 }
 
