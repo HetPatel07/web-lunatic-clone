@@ -479,7 +479,7 @@ h2 {
     transition: .3s all;
 }
 
-.team-main .carousel-indicators{
+.team-main .carousel-indicators {
     bottom: 0;
 }
 
@@ -504,18 +504,19 @@ h2 {
     font-weight: 400;
 }
 
-.quotes{
+.quotes {
     display: block;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
     padding: 60px 60px 60px 80px;
 }
 
-.quotes-icon{
+.quotes-icon {
     height: 50px;
     width: 50px;
     position: relative;
 }
-.quotes-icon::before{
+
+.quotes-icon::before {
     content: '\f1b2';
     font-family: 'Material-Design-Iconic-Font';
     color: var(--firstcolor);
@@ -528,12 +529,12 @@ h2 {
     width: 100%;
 }
 
-.writer{
+.writer {
     color: var(--firstcolor);
     font-weight: 400;
 }
 
-.team-main .arrow{
+.team-main .arrow {
     font-size: 30px;
 }
 
@@ -680,11 +681,19 @@ h2 {
     .team {
         margin-top: 30px;
     }
-    .team-mob{
+
+    .team-mob {
         margin-top: 50px;
     }
-    .team-content p{
+
+    .team-content p {
         font-size: 14px;
+    }
+
+    .quotes {
+        display: block;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        padding: 20px 15px;
     }
 
 }
@@ -706,6 +715,10 @@ h2 {
     .responsive-tab {
         margin-top: 50px;
     }
+    .item {
+        width: 33.33%;
+        float: left;
+    }
 
     .features-main {
         width: 33.33%;
@@ -714,6 +727,11 @@ h2 {
 
     .features-tab {
         display: none;
+    }
+    .quotes {
+        display: block;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+        padding: 30px 20px 20px;
     }
 }
 
